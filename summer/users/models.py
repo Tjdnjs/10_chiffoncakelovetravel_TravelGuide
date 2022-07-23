@@ -19,8 +19,8 @@ class User(AbstractUser):
 
 
 class Review(models.Model):
-    title = models.CharField(max_length=30, default='')
-    travel_place = models.CharField(max_length=20, default='')
+    title = models.CharField(max_length=30)
+    travel_place = models.CharField(max_length=20)
 
     RATING_CHOICES = [
         (1, 1),
@@ -39,8 +39,6 @@ class Review(models.Model):
     content = models.TextField()
     dt_created = models.DateTimeField(auto_now_add=True)
     dt_updated = models.DateTimeField(auto_now=True)
-
-    author= models.ForeignKey(User, on_delete=models.CASCADE)
 
 
     def __str__(self):
