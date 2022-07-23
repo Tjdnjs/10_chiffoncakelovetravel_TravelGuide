@@ -106,19 +106,23 @@ div.panel{
 }
 
 .submit input{
-    font-size:.75rem;
+    font-size:.7rem;
+    font-weight: 600;
     padding: .4rem 1.5rem;
     border-radius: 2rem;
-    border:1px solid rgb(146, 150, 250);
+    /* border:1px solid rgb(146, 150, 250);
     background: rgb(146, 150, 250);
-    color: rgb(247, 247, 247);
+    color: rgb(247, 247, 247); */
+    border:1px solid rgba(230, 230, 230,.7);
+    background: rgba(230, 230, 230,.7);
+    color: rgb(81, 87, 254);
 
 }
 
 .submit input:hover{
-    border-color:rgb(93, 98, 254);
-    background: rgb(93, 98, 254);
-    color: rgb(247, 247, 247);
+    border-color:rgba(230, 230, 230,1);
+    background: rgba(230, 230, 230,1);
+    color: rgb(81, 87, 254);
 }
 
 @media (max-width:1100px){
