@@ -110,7 +110,7 @@ input[id*="reg"]:checked + label em{
     margin-left: 16rem; margin-right: 3rem;
     position: absolute;
     top: 12rem;
-    column-width: 12rem;
+    column-width: 13rem;
     column-gap: 2rem;
 }
 #columns figure{
@@ -122,6 +122,7 @@ input[id*="reg"]:checked + label em{
     border: 1px solid gray;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     padding : .5rem;
+    background-color: white;
 }
 
 
