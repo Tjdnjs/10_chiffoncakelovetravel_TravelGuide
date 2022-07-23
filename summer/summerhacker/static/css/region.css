@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .nav_r{
     opacity: .85;
     position: relative;
@@ -103,34 +106,22 @@ input[id*="reg"]:checked + label em{
 }
 
 
-
-
-
-
-
 #columns{
     margin-left: 16rem; margin-right: 3rem;
     position: absolute;
     top: 12rem;
-    column-count: 3;
-    column-gap: 30px;
+    column-width: 12rem;
+    column-gap: 2rem;
 }
 #columns figure{
     display: inline-block;
-    border: 1px solid gray;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     margin: 0; margin-bottom: 30px;
-    padding : 10px;
-    height: 10rem;
-    overflow: auto;
 }
 #columns figure img{
     width: 100%;
-}
-#columns figure figcaption{
-    border-top: 1px solid gray;
-    padding: 10px;
-    margin-top: 10px;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    padding : .5rem;
 }
 
 
@@ -141,11 +132,22 @@ input[id*="reg"]:checked + label em{
         left: 0;
         width: 10rem;
     }
+    #columns{
+        margin-left: 13rem; margin-right: 3rem;
+        position: absolute;
+        top: 10rem;
+        column-width: 6rem;
+        column-gap: 1.5rem;
+    }
+
 }
 
 @media (max-width:800px){
     .nav_r{
         display:none;
     }
+    #columns{
+        margin: 0
 }
 
+}
